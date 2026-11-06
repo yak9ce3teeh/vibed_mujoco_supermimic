@@ -24,3 +24,22 @@
   - It looks like a fantastic result has been achieved, although root position error remains a problem.
   - The return and reward curves appear to be converging well.
   - Foot lifting still has not been achieved, and the robot seems unable to handle movements on the ground.
+
+### Training curves and example videos
+
+Evaluation and world-model validation curves for the full run:
+
+![Evaluation and world-model validation curves](docs/results/figures/training-curves.png)
+
+Training returns, per-step reward, and WM/actor/critic losses:
+
+![Training return, reward, and optimizer-loss curves](docs/results/figures/training-params-curves.png)
+
+Click a video link to open or download the MP4 file (use **View raw** on GitHub):
+
+- [BEST500 — unseen BONES walking](docs/results/videos/bones-unseen-walk-arc-best500.mp4)
+- [BEST500 — unseen BONES dance](docs/results/videos/bones-unseen-dance-retro-best500.mp4)
+- [FINAL536 — training-recording jump failure](docs/results/videos/lafan-jumps1-subject1-final536-failure.mp4)
+
+These clips use different checkpoints and evaluation scopes. See the
+[results index](docs/results/README.md) for their metrics, sources, and limitations.
