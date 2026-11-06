@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "scope": "Public source references and aggregate identities only; no motion payloads, licensed per-motion metadata or account/access records",
+  "sources": [
+    {
+      "id": "lafan1_original",
+      "url": "https://github.com/ubisoft/ubisoft-laforge-animation-dataset",
+      "revision": "94084601bacdf9cc3764b5c73daaeccae6035fac",
+      "terms": "See the upstream dataset license; not relicensed by this repository"
+    },
+    {
+      "id": "lafan1_public_g1",
+      "url": "https://huggingface.co/datasets/lvhaidong/LAFAN1_Retargeting_Dataset",
+      "revision": "07ff8845a94d59d4195a8ac04fe918d4e6338239",
+      "format": "40 G1 recordings,30Hz,rootXYZ/XYZW plus29 named joint angles",
+      "local_canonical_states_50hz": 441140,
+      "local_canonical_transitions_50hz": 441100,
+      "local_canonical_sha256": "37684265263382bac5e087ebe73ec398deef95cbab07a6350b59bd985c2d3ca6",
+      "terms": "Third-party retargeted derivative; obtain data and permissions separately"
+    },
+    {
+      "id": "bones_seed",
+      "url": "https://huggingface.co/datasets/bones-studio/seed",
+      "revision": "2f59b2077b9da34dd4e43618e705c7cb962c9a66",
+      "scope": "Two pre-selected short unseen examples used only for evaluation; not part of the40-recording training input",
+      "terms": "Follow the upstream access/license terms; no sourceCSV, motion payload or restricted metadata redistributed"
+    }
+  ]
+}

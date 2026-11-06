@@ -1,0 +1,213 @@
+{
+  "scope": "Paper-size architecture only; discrete measured environment points, not an absolute hardware maximum",
+  "architecture": {
+    "profile": "paper-1",
+    "encoder": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "decoder": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "world": [
+      2048,
+      2048,
+      2048
+    ],
+    "critic": [
+      256,
+      128
+    ],
+    "parameters": 17806724
+  },
+  "standard_candidates": [
+    {
+      "num_envs": 512,
+      "batch": 256,
+      "minimum_free_mib": 11526,
+      "peak_device_used_mib": 4414,
+      "peak_host_rss_kib": 3399456,
+      "torch_allocator": {
+        "torch_peak_allocated": 1778508800,
+        "torch_peak_reserved": 2518679552,
+        "warp_pool_highwater": 1109839013,
+        "stress_bytes": 473235456,
+        "matmul_allow_tf32": false,
+        "matmul_precision": "highest",
+        "amp": false
+      },
+      "fd": {
+        "analytic": 0.007036161475334499,
+        "finite_difference": 0.00703616156449982,
+        "absolute_error": 8.916532096003849e-11,
+        "relative_error": 1.2672437968154728e-08,
+        "passed": true,
+        "horizon": 32
+      },
+      "blocks": [
+        {
+          "joint_block": 1,
+          "valid_transitions": 21402,
+          "collect_seconds": 8.199923834996298,
+          "world_seconds": 4.288339014980011,
+          "actor_critic_and_other_seconds": 5.126929059042595,
+          "total_block_seconds": 17.615191909018904,
+          "effective_collect_transitions_s": 2626.076518922129,
+          "whole_block_transitions_s": 1214.9739900955758,
+          "wm_sampled_k_steps_per_new_transition": 9.569199140267266,
+          "resident_transitions": 42756
+        },
+        {
+          "joint_block": 2,
+          "valid_transitions": 23198,
+          "collect_seconds": 14.167650129995309,
+          "world_seconds": 4.3684589240001515,
+          "actor_critic_and_other_seconds": 5.244701888994314,
+          "total_block_seconds": 23.780810942989774,
+          "effective_collect_transitions_s": 1646.1269501788777,
+          "whole_block_transitions_s": 975.4923856723407,
+          "wm_sampled_k_steps_per_new_transition": 8.828347271316494,
+          "resident_transitions": 65954
+        }
+      ]
+    },
+    {
+      "num_envs": 2048,
+      "batch": 256,
+      "minimum_free_mib": 4469,
+      "peak_device_used_mib": 11471,
+      "peak_host_rss_kib": 4745468,
+      "torch_allocator": {
+        "torch_peak_allocated": 5255309824,
+        "torch_peak_reserved": 6455033856,
+        "warp_pool_highwater": 4392860837,
+        "stress_bytes": 1892941824,
+        "matmul_allow_tf32": false,
+        "matmul_precision": "highest",
+        "amp": false
+      },
+      "fd": {
+        "analytic": 0.0012772775035840174,
+        "finite_difference": 0.0012772774837799261,
+        "absolute_error": 1.9804091309569283e-11,
+        "relative_error": 1.550492453989001e-08,
+        "passed": true,
+        "horizon": 32
+      },
+      "blocks": [
+        {
+          "joint_block": 1,
+          "valid_transitions": 86290,
+          "collect_seconds": 23.184513913933188,
+          "world_seconds": 4.436186220031232,
+          "actor_critic_and_other_seconds": 5.36590620293282,
+          "total_block_seconds": 32.98660633689724,
+          "effective_collect_transitions_s": 3827.467516610176,
+          "whole_block_transitions_s": 2615.91020060406,
+          "wm_sampled_k_steps_per_new_transition": 2.3733920500637384,
+          "resident_transitions": 172188
+        },
+        {
+          "joint_block": 2,
+          "valid_transitions": 80548,
+          "collect_seconds": 26.711942426976748,
+          "world_seconds": 4.6647226109635085,
+          "actor_critic_and_other_seconds": 5.416705084964633,
+          "total_block_seconds": 36.79337012290489,
+          "effective_collect_transitions_s": 3241.272287935216,
+          "whole_block_transitions_s": 2189.198753224746,
+          "wm_sampled_k_steps_per_new_transition": 2.542583304365099,
+          "resident_transitions": 252736
+        }
+      ]
+    },
+    {
+      "num_envs": 2560,
+      "batch": 256,
+      "minimum_free_mib": 2084,
+      "peak_device_used_mib": 13857,
+      "peak_host_rss_kib": 5094500,
+      "torch_allocator": {
+        "torch_peak_allocated": 6483480064,
+        "torch_peak_reserved": 7885291520,
+        "warp_pool_highwater": 5487201445,
+        "stress_bytes": 2366177280,
+        "matmul_allow_tf32": false,
+        "matmul_precision": "highest",
+        "amp": false
+      },
+      "fd": {
+        "analytic": 0.01465395000410745,
+        "finite_difference": 0.014653950120013802,
+        "absolute_error": 1.1590635222435974e-10,
+        "relative_error": 7.909563720027906e-09,
+        "passed": true,
+        "horizon": 32
+      },
+      "blocks": [
+        {
+          "joint_block": 1,
+          "valid_transitions": 107570,
+          "collect_seconds": 27.321067921002395,
+          "world_seconds": 4.46779993805103,
+          "actor_critic_and_other_seconds": 5.398358993930742,
+          "total_block_seconds": 37.18722685298417,
+          "effective_collect_transitions_s": 3956.01439422866,
+          "whole_block_transitions_s": 2892.659902424744,
+          "wm_sampled_k_steps_per_new_transition": 1.9038765455052524,
+          "resident_transitions": 214867
+        },
+        {
+          "joint_block": 2,
+          "valid_transitions": 96245,
+          "collect_seconds": 27.953837553970516,
+          "world_seconds": 5.887639435939491,
+          "actor_critic_and_other_seconds": 5.468461496988311,
+          "total_block_seconds": 39.30993848689832,
+          "effective_collect_transitions_s": 3459.463499470913,
+          "whole_block_transitions_s": 2448.3630273824438,
+          "wm_sampled_k_steps_per_new_transition": 2.1279027481947113,
+          "resident_transitions": 311112
+        }
+      ]
+    }
+  ],
+  "recommendation": {
+    "num_envs": 2048,
+    "batch": 256,
+    "replay_capacity": 2097152,
+    "reason": "E2560 only36MiB above2GiB guard; small useful throughput gain; E2048 retains4.36GiB worst-stress headroom"
+  },
+  "protocol": {
+    "warm_blocks": 1,
+    "joint_blocks": 2,
+    "world_updates": 100,
+    "actor_updates": 10,
+    "critic_steps_per_block": 200,
+    "K": 8,
+    "H": 32,
+    "seed": 7,
+    "precision": "float32, no AMP, TF32 matmul false",
+    "memory_stress": "Two498-step float32 trace copies plus normalization over maximum two-wave replay; artificial allocation, not a completed498-step rollout",
+    "timing": "Two changing-policy joint blocks, not independent statistical repeats; timings exclude initial/final evaluation and checkpoint overhead",
+    "telemetry": "nvidia-smi polling sleep50ms plus process invocation overhead; sampled free memory is not guaranteed instantaneous minimum",
+    "host_available_gib_at_start": 43
+  },
+  "unrun_environment_points": [
+    {
+      "num_envs": 4096,
+      "status": "not_run",
+      "reason": "Estimated16.8GB even one-wave normalization plus doubletrace/physics; no2GiB reserve; not an observed failure"
+    }
+  ],
+  "earlier_network_axis": {
+    "scope": "Superseded by user restriction to paper-size networks",
+    "four_times": "Actual complete protocol passed atE256/B256, peak9928MiB",
+    "eight_times": "Started before cancellation; actual CUDA OOM in float64 FD directions;0.5s polling missed transient, own subprocess exited; GPU memory released. Not a usable profile."
+  }
+}

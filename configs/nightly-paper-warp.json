@@ -1,0 +1,33 @@
+{
+  "configuration": {
+    "model": "/home/hm/workspace/skate-sim/assets/robot/g1/scene_29dof_freebase.xml",
+    "motions": "dataset/processed/lafan_29dof_10s-clipped.pkl",
+    "controller": "configs/g1_controller.json",
+    "device": "cuda",
+    "physics_backend": "warp",
+    "num_envs": 2048,
+    "episodes": 2048,
+    "architecture_profile": "paper-1",
+    "batch": 256,
+    "world_updates": 100,
+    "actor_updates": 10,
+    "replay_capacity": 2097152,
+    "warmup_blocks": 5,
+    "warmup_max": 10,
+    "warmup_gate": true,
+    "blocks": 5000,
+    "max_hours": 10,
+    "eval_every": 25,
+    "checkpoint_every": 10,
+    "threads": 2,
+    "seed": 7
+  },
+  "training_gates": false,
+  "notes": [
+    "Fresh run only; no reuse of old native weights/replay",
+    "Do not pass artificial capacity stress flags to actual training",
+    "Datetime output directory assigned at launch",
+    "Warmup gate retained; failure stops honestly"
+  ],
+  "source_sha256": "b755856b462c7c25f8a72e92ac98b205c37dd7ea77d0d72fcf6a24816b1d75fb"
+}

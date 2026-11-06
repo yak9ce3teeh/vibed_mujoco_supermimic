@@ -1,0 +1,65 @@
+# Python/build/editor artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.coverage
+htmlcov/
+.DS_Store
+
+# Runtime state, environments and downloaded caches
+logs/
+outputs/
+ckpt/
+checkpoints/
+.venv/
+venv/
+env/
+envs/
+.conda/
+.cache/
+.hf_cache/
+*.incomplete
+*.partial
+
+# Credentials and machine-private configuration
+.env
+.env.*
+.aws/
+.ssh/
+credentials/
+secrets/
+*.pem
+*.key
+*token*.json
+
+# Datasets stay local. Keep preparation code, documentation and public source facts.
+dataset/*
+!dataset/*.py
+!dataset/README.md
+!dataset/public-sources.json
+
+# Learned weights, trajectories and large data archives are not repository assets.
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.pkl
+*.pickle
+*.joblib
+*.npz
+*.npy
+*.parquet
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+
+# Only the small, deliberately selected documentation media are versioned.
+*.mp4
+*.png
+*.svg
+!docs/results/figures/*.png
+!docs/results/videos/*.mp4

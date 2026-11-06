@@ -1,0 +1,27 @@
+{
+  "environment": "/home/hm/.conda/envs/supermimic-warp",
+  "origin_clone": "/home/hm/.conda/envs/skate-sim-mjlab",
+  "python": "3.11.16",
+  "packages": {
+    "mujoco": "3.11.0",
+    "mujoco-warp": "3.11.0",
+    "warp-lang": "1.17.0",
+    "torch": "2.7.0+cu128",
+    "numpy": "1.26.4",
+    "scipy": "1.17.1",
+    "joblib": "1.6.0",
+    "pytest": "8.4.2"
+  },
+  "driver": "575.57.08",
+  "gpu": "NVIDIA GeForce RTX4060Ti16GB",
+  "cuda_torch": "12.8",
+  "cuda_warp": "12.9",
+  "core_runtime": "Direct stock mujoco_warp; mjlab and skate-sim controllers/order hooks are not imported",
+  "existing_environment_updates": false,
+  "motion_pickle_load_verified": "862 clips, original trusted processed library",
+  "legacy_checkpoint_load_verified": [
+    "compact schema3",
+    "full train_state_version1"
+  ],
+  "notes": "This lock records the tested dedicated clone, not a request to upgrade the source environment."
+}

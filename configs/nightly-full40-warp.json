@@ -1,0 +1,45 @@
+{
+  "entrypoint": "supermimic.multi_training",
+  "environment": "/home/hm/.conda/envs/supermimic-warp",
+  "source_sha256": "3073d964500b4687446d463ec46a4d792f22c4b60b497c9971b82e89d05fd693",
+  "configuration": {
+    "model": "/home/hm/workspace/skate-sim/assets/robot/g1/scene_29dof_freebase.xml",
+    "motions": "dataset/processed/lafan1_full_g1/motions-50hz.joblib",
+    "controller": "configs/g1_controller.json",
+    "num_envs": 2048,
+    "chunk_steps": 64,
+    "batch": 256,
+    "world_updates": 100,
+    "actor_updates": 10,
+    "architecture_profile": "paper-1",
+    "replay_capacity": 2097152,
+    "warmup_blocks": 5,
+    "warmup_max": 20,
+    "warmup_gate": true,
+    "blocks": 5000,
+    "max_hours": 10,
+    "eval_every": 25,
+    "checkpoint_every": 10,
+    "threads": 2,
+    "seed": 7,
+    "monitor_clip": "walk1_subject1"
+  },
+  "dataset": {
+    "recordings": 40,
+    "source_rows": 264705,
+    "runtime_states": 441140,
+    "runtime_transitions": 441100,
+    "canonical_sha256": "37684265263382bac5e087ebe73ec398deef95cbab07a6350b59bd985c2d3ca6",
+    "scope": "All40 complete recordings; no10s cutting/no heldout-motion claim"
+  },
+  "resume_mode": "reset_live_lanes_on_resume",
+  "notes": [
+    "Fresh run; old single run remains immutable",
+    "64vector controls are a segment boundary, never a fake episode termination",
+    "WM windows retain7-step overlap; policy seeds use clean10-frame context and valid42-frame references",
+    "50%uniform/40%hard-softmax/10%historical start bins; temperature25, gamma.99, Gmax10; local unspecified conventions recorded in README",
+    "Fixed physics/noDR; native full40 benchmark with separate representative reset200",
+    "Final evaluation reserve=max900seconds or1.25*441100/slowest measured native evalsteps_per_second+120; may honestly exceed if host slows",
+    "5000 is only loop ceiling; source and assets must match to resume; live physical lanes always reset and logged"
+  ]
+}
