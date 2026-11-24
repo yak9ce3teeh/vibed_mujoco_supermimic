@@ -1,0 +1,15 @@
+{
+  "prefix": "/home/hm/.conda/envs/video2motion-beyond",
+  "python": "3.10.14 | packaged by conda-forge | (main, Mar 20 2024, 12:45:18) [GCC 12.3.0]",
+  "packages": {
+    "torch": "2.3.0",
+    "torchvision": "0.18.0",
+    "pytorch3d": "0.7.6",
+    "numpy": "1.23.5",
+    "mujoco": "3.1.6",
+    "smplx": "0.1.28",
+    "joblib": "1.5.3",
+    "opencv-python": "4.11.0.86"
+  },
+  "vendor_revision": "a6469c95c527115f85798e53ab0c9412ea4d4b18"
+}

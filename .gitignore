@@ -63,3 +63,17 @@ dataset/*
 *.svg
 !docs/results/figures/*.png
 !docs/results/videos/*.mp4
+
+# Video-to-motion vendors, licensed assets and generated payloads remain local.
+video2motion/**/vendor/
+video2motion/**/assets/
+video2motion/**/runs/
+video2motion/**/envs/
+video2motion/**/weights/
+video2motion/**/cache/
+video2motion/**/downloads/
+
+video2motion/**/inputs/
+
+# Shared local neural weights/robot resources (not distributable source).
+video2motion/shared_assets/

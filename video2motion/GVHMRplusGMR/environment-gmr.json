@@ -1,0 +1,17 @@
+{
+  "prefix": "/home/hm/.conda/envs/video2motion-gmr",
+  "python": "3.11.16 (main, Aug 27 2026, 14:44:21) [GCC 14.3.0]",
+  "packages": {
+    "torch": "2.7.0+cu128",
+    "numpy": "1.26.4",
+    "mujoco": "3.11.0",
+    "mink": "1.4.0",
+    "qpsolvers": "4.13.0",
+    "smplx": "0.1.28",
+    "opencv-python": "4.11.0.86"
+  },
+  "vendor_revision": "25f56db79ac411258b377b6d4ccba0c8ff3372ac",
+  "installation_notes": [
+    "NumPy1.26.4 and OpenCV4.11 pinned for canonical joblib compatibility with existing native1.26 runtime"
+  ]
+}
